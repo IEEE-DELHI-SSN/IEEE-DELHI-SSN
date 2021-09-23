@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 .gallery_head{
 
 position: absolute;
@@ -9,10 +10,28 @@ font-family: 'Open Sans', sans-serif;
 font-size: 30px;
 
 }
+@media only screen 
+and (max-width : 1050px) {
+
+.align-gallery{
+    position: absolute;
+    top: 265vh;
+    width: 100vw;background-color: white;
+}
+}
+@media only screen 
+and (min-width : 1050px) {
+
+.align-gallery{
+    position: absolute;
+    top: 220vh;
+    width: 100vw;background-color: white;
+}
+}
 body{
     background-color: #ffffff;
 }
-.underline{
+.under_line{
     background-image: url("../Images/gallery_icon.jpg");
     /* position: absolute;
      */
@@ -49,7 +68,7 @@ body{
 }
 .photos{
    padding: 20px;
-   margin: 20px;
+   margin: 70px;
 }
 .photos:hover{
     color: rgb(0, 132, 255);
